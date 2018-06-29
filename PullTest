@@ -1,5 +1,5 @@
 ---
 tasks:
  - name: Run Remote Powershell Script
-   win_command: iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Gemmyfire/Ansible/master/PowerScript'))
+   win_shell: iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Gemmyfire/Ansible/master/PowerScript'))
 
