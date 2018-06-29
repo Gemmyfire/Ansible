@@ -1,0 +1,4 @@
+---
+tasks:
+ - name: Run Remote Powershell Script
+   win_command: $Script = Invoke-WebRequest https://github.com/Gemmyfire/Ansible/blob/master/PowerScript; Invoke-Expression $($Script.Content)
