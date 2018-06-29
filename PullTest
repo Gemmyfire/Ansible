@@ -1,4 +1,5 @@
 ---
 tasks:
  - name: Run Remote Powershell Script
-   win_command: $Script = Invoke-WebRequest https://github.com/Gemmyfire/Ansible/blob/master/PowerScript; Invoke-Expression $($Script.Content)
+   win_command: iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Gemmyfire/Ansible/master/PowerScript'))
+
