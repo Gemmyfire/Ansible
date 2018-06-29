@@ -1,0 +1,1 @@
+New-Item -Path C:\ -Name "hi.txt" -ItemType "file" -Value "Test string."
